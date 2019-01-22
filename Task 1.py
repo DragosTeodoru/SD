@@ -6,7 +6,7 @@ class Shapes(object):
 
 class Circle(Shapes):  
     def __init__(self, name= "Circle", sides=1):  
-        Shapes.__init__(self, name, sides)
+        super().__init__()
         self.name=name
         self.sides=sides
         self.radius=radius
